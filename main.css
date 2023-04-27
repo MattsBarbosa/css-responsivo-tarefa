@@ -1,0 +1,155 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 28px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sobre {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.sobre img {
+    width: 500px;
+    height: 400px;
+}
+.texto-sobre {
+    margin-left: 40px;
+}
+
+h2 {
+    border-bottom: 3px solid ;
+    margin-bottom: 25px;
+    padding: 10px 0;
+}
+
+.sobre .container {
+    margin-left: 30px;
+}
+
+.produto img {
+    height: 291px;
+    width: 291px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.produtos img {
+    max-width: 100%;
+}
+
+.produtos li {
+    list-style: none;
+}
+
+.produtos h2 {
+    margin: 10px 0;
+    border-bottom: none;
+    padding: 0;
+}
+
+.produtos button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.produtos button:hover, nav li a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .texto-sobre {
+        margin-left: 0;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .sobre img {
+        width: 100%;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    .texto-sobre {
+        margin-left: 0;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .sobre img {
+        width: 100%;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
