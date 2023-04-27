@@ -152,4 +152,8 @@ h2 {
         display: grid;
         grid-template-columns: 100%;
     }
+
+    .produtos img {
+        text-align: center;
+    }
 }
